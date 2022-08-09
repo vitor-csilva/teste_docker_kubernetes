@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod_teste_docker_kubernetes
+spec: 
+  containers:
+    - name: web
+      image: vitorcostasilva/teste_docker_kubernetes:v1
+      ports:
+        - containerPort: 55002
